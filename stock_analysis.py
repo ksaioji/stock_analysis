@@ -110,12 +110,14 @@ forecast_out = int(math.ceil(0.01 * len(dfreg)))
 forecast_col = 'Adj Close'
 dfreg['label'] = dfreg[forecast_col].shift(-forecast_out)
 X = np.array(dfreg.drop(['label'], 1))
+#print(X)
 
 # Scale the X so that everyone can have the same distribution for linear regression
 X = preprocessing.scale(X)
 
 # Finally We want to find Data Series of late X and early X (train) for model generation and evaluation
 X_lately = X[-forecast_out:]
+print(X_lately)
 X = X[:-forecast_out]
 
 # Separate label and identify it as y
