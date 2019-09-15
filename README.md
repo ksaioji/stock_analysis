@@ -9,4 +9,4 @@ Proper link is below.
 
 https://github.com/VincentTatan/PythonAnalytics/blob/master/Youtube/Lesson%203%20%20Basic%20Python%20for%20Data%20Analytics%20(Stocks%20Prediction).ipynb
 
-s
+I write jupyter note book version(.ipynb) and python 3 version(.py).
